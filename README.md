@@ -13,10 +13,11 @@
 
 - [Flutterの教科書 by Flutter大学](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/index)
 
-
 ## 成果物
 
 ### [じゃんけんアプリ](./janken/)
+- 学習日
+  - 2026/1/13
 - 学習項目
   - [Chapter 08
 変数・関数・条件分岐の基礎『じゃんけん』](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/make-janken-game)
@@ -32,6 +33,4 @@
     - ref: https://docs.flutter.dev/release/breaking-changes/material-3-migration
 - 動作確認
   - 端末: iPhone 16e 26.2(Simulator)
-  - <video src="./images/janken_app_iPone16e.mp4" controls="true" />
-
-
+  - <video src="https://github.com/user-attachments/assets/0d0e2105-58c9-4ab1-b5a2-1e9b14f46ab6" controls="true" />
