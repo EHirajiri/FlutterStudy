@@ -21,12 +21,15 @@
   - [Chapter 08
 変数・関数・条件分岐の基礎『じゃんけん』](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/make-janken-game)
   - 実践課題Aまで
-- 参考書からの改善点
+- 動画からの改善点
   - 出す手(グーチョキパー)をenumとして定義して別ファイルに切り出した
   - コンピュータがランダムに出す手や勝敗判定は出す手の定義に含めるよう修正した
   - 勝敗の文字列をenumとして定義して別ファイルに切り出した
   - 出す手は３つあるのでコンポーネントがして別ファイルに切り出した
   - アクセシビリティ対応(途中)
+  - 動画ではAppBarの背景色が青だが、開発環境(Flutter: 3.38.5)ではMaterial3が有効になって背景色がSurfaceColorに変更されている
+    - Flutter3.16からMaterial3がデフォルトで有効になったので動画とデザインを合わせるためにMaterial3へのmigration対応した
+    - ref: https://docs.flutter.dev/release/breaking-changes/material-3-migration
 - 動作確認
   - 端末: iPhone 16e 26.2(Simulator)
   - <video src="./images/janken_app_iPone16e.mp4" controls="true" />

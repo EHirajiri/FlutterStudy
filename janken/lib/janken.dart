@@ -62,8 +62,7 @@ class _JankenPageState extends State<JankenPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title, style: TextStyle(color: Colors.white)),
-        backgroundColor: Colors.blue,
+        title: Text(widget.title),
       ),
       body: Center(
         child: Column(
