@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_janken/hand.dart';
+import 'package:flutter_janken/constants.dart';
 
 class HandButton extends StatelessWidget {
   final void Function(Hand) onHandSelected;

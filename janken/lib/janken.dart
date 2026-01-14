@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_janken/hand.dart';
+import 'package:flutter_janken/constants.dart';
 import 'package:flutter_janken/hand_button.dart';
 
 class JankenPage extends StatefulWidget {
-  const JankenPage({super.key});
+  const JankenPage({super.key, required this.title});
+
+  final String title;
 
   @override
   State<JankenPage> createState() => _JankenPageState();
@@ -19,8 +21,8 @@ class _JankenPageState extends State<JankenPage> {
   void selectHand(Hand selectedHand) {
     setState(() {
       myHand = selectedHand;
-      computerHand = Hand.random();
-      result = myHand.judge(computerHand);
+      computerHand = Hand.random;
+      result = GameResult.values[myHand.compareTo(computerHand)];
       count++;
       winCount += result == GameResult.win ? 1 : 0;
     });
@@ -59,7 +61,10 @@ class _JankenPageState extends State<JankenPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('じゃんけん')),
+      appBar: AppBar(
+        title: Text(widget.title, style: TextStyle(color: Colors.white)),
+        backgroundColor: Colors.blue,
+      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,

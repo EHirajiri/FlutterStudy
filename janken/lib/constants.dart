@@ -10,7 +10,7 @@ enum GameResult {
   final String label;
 }
 
-enum Hand {
+enum Hand implements Comparable<Hand> {
   rock("✊", 'グー'),
   scissors("✌️", 'チョキ'),
   paper("🖐", 'パー');
@@ -20,22 +20,18 @@ enum Hand {
   final String emoji;
   final String label;
 
-  static final Random _random = Random();
+  static Hand get random => Hand.values[Random().nextInt(Hand.values.length)];
 
-  static Hand random() {
-    final randomNumber = _random.nextInt(Hand.values.length);
-    return Hand.values[randomNumber];
-  }
-
-  GameResult judge(Hand other) {
+  @override
+  int compareTo(Hand other) {
     if (this == other) {
-      return GameResult.draw;
+      return GameResult.draw.index;
     } else if ((this == Hand.rock && other == Hand.scissors) ||
         (this == Hand.scissors && other == Hand.paper) ||
         (this == Hand.paper && other == Hand.rock)) {
-      return GameResult.win;
+      return GameResult.win.index;
     } else {
-      return GameResult.lose;
+      return GameResult.lose.index;
     }
   }
 }
