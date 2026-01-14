@@ -29,6 +29,6 @@
   - アクセシビリティ対応(途中)
 - 動作確認
   - 端末: iPhone 16e 26.2(Simulator)
-  - <video src="./images/janken_app_iPone16e.mp4" controls="true" />
+  - ![動画](./images/janken_app_iPone16e.mp4)
 
 
