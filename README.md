@@ -13,10 +13,11 @@
 
 - [Flutterの教科書 by Flutter大学](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/index)
 
-
 ## 成果物
 
 ### [じゃんけんアプリ](./janken/)
+- 学習日
+  - 2026/1/13
 - 学習項目
   - [Chapter 08
 変数・関数・条件分岐の基礎『じゃんけん』](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/make-janken-game)
