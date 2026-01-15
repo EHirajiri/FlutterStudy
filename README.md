@@ -48,6 +48,11 @@
   - APIキーを環境変数から取得するよう修正した
   - class毎にファイルを分けた
   - APIレスポンスの変換処理を個々のMapデータではなく、Mapのリスト毎変換する処理を追加した
+  - 動画ではAppBarの背景色が青だが、開発環境(Flutter: 3.38.5)ではMaterial3が有効になって背景色がSurfaceColorに変更されている
+    - Flutter3.16からMaterial3がデフォルトで有効になったので動画とデザインを合わせるためにMaterial3へのmigration対応した
+    - ref: https://docs.flutter.dev/release/breaking-changes/material-3-migration
+  - Share.shareFilesは4.5.0でdeprecatedされたため、SharePlus.instance.shareに修正した
+　  - [https://pub.dev/packages/share_plus](https://pub.dev/packages/share_plus/changelog#450)　
 - 動作確認
   - 端末: iPhone 16e 26.2(Simulator)
   - <video src="https://github.com/user-attachments/assets/ee54431d-6751-42df-bd92-e33baeff5bc0" controls="true" />
