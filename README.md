@@ -48,3 +48,6 @@
   - APIキーを環境変数から取得するよう修正した
   - class毎にファイルを分けた
   - APIレスポンスの変換処理を個々のMapデータではなく、Mapのリスト毎変換する処理を追加した
+- 動作確認
+  - 端末: iPhone 16e 26.2(Simulator)
+  - <video src="https://github.com/user-attachments/assets/ee54431d-6751-42df-bd92-e33baeff5bc0" controls="true" />
