@@ -34,3 +34,17 @@
 - 動作確認
   - 端末: iPhone 16e 26.2(Simulator)
   - <video src="https://github.com/user-attachments/assets/0d0e2105-58c9-4ab1-b5a2-1e9b14f46ab6" controls="true" />
+
+### [フリー画像検索アプリ](./pixabay/)
+- 学習日
+  - 2026/1/15
+- 学習項目
+  - [フリー画像検索アプリ【前編】](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/search-free-image-1)
+  - [フリー画像検索アプリ【後編】](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/search-free-image-2)
+  - [フリー画像検索アプリ【改善】](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/search-free-image-3)
+  - 実践課題Aまで  
+- 動画からの改善点
+  - ソートボタンを追加して、ソートボタンタップでいいね数の多い順にソートされるように修正した
+  - APIキーを環境変数から取得するよう修正した
+  - class毎にファイルを分けた
+  - APIレスポンスの変換処理を個々のMapデータではなく、Mapのリスト毎変換する処理を追加した
