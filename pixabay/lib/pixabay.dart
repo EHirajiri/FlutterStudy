@@ -56,10 +56,24 @@ class _PixabayPageState extends State<PixabayPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: TextFormField(
-          initialValue: '花',
-          decoration: InputDecoration(fillColor: Colors.white, filled: true),
-          onFieldSubmitted: (text) => {fetchImages(text)},
+        title: Row(
+          children: [
+            Expanded(
+              child: TextFormField(
+                initialValue: '花',
+                decoration: InputDecoration(fillColor: Colors.white, filled: true),
+                onFieldSubmitted: (text) => {fetchImages(text)},
+              ),
+            ),
+            IconButton(
+              icon: Icon(Icons.sort),
+              onPressed: () {
+                setState(() {
+                  hits.sort((a, b) => b.likes.compareTo(a.likes));
+                });
+              },
+            ),
+          ],
         ),
       ),
       body: GridView.builder(

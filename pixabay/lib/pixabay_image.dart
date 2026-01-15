@@ -18,8 +18,6 @@ class PixabayImage {
   }
 
   static List<PixabayImage> fromJson(List jsonList) {
-    return jsonList
-        .map((json) => PixabayImage.fromMap(json))
-        .toList();
+    return jsonList.map((json) => PixabayImage.fromMap(json)).toList();
   }
 }
