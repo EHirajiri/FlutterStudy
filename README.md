@@ -15,6 +15,21 @@
 
 ## 成果物
 
+### [Twitter風アプリ](./twitter_like/)
+- 学習項目
+  - [Widgetの基礎『Twitter UI』](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/make-twitter-ui)
+- 動画からの改善点
+  - 動画ではAppBarの背景色が青だが、開発環境(Flutter: 3.38.5)ではMaterial3が有効になって背景色がSurfaceColorに変更されている
+    - Flutter3.16からMaterial3がデフォルトで有効になったので動画とデザインを合わせるためにMaterial3へのmigration対応した
+    - ref: https://docs.flutter.dev/release/breaking-changes/material-3-migration
+- 動作確認
+  - 端末: iPhone 16e 26.2(Simulator)
+  - ![](./images/twitter_like_iPhone16e.png)
+  - [source](./twitter_like/lib/main.dart)
+- Android Jetpack Composeでも作ってみた
+  - 端末: Android 16(Simulator)
+  - ![](./images/twitter_like_Android16.png)
+  - [source](./TwitterLike/app/src/main/java/com/example/twitterlike/MainActivity.kt)
 ### [じゃんけんアプリ](./janken/)
 - 学習日
   - 2026/1/13
