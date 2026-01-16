@@ -24,11 +24,11 @@
     - ref: https://docs.flutter.dev/release/breaking-changes/material-3-migration
 - 動作確認
   - 端末: iPhone 16e 26.2(Simulator)
-  - ![](./images/twitter_like_iPhone16e.png)
+  - !<img src="./images/twitter_like_iPhone16e.png" width="300">
   - [source](./twitter_like/lib/main.dart)
 - Android Jetpack Composeでも作ってみた
   - 端末: Android 16(Simulator)
-  - ![](./images/twitter_like_Android16.png)
+  - !<img src="./images/twitter_like_Android16.png" width="300">
   - [source](./TwitterLike/app/src/main/java/com/example/twitterlike/MainActivity.kt)
 ### [じゃんけんアプリ](./janken/)
 - 学習日
