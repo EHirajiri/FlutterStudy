@@ -68,7 +68,22 @@
     - Flutter3.16からMaterial3がデフォルトで有効になったので動画とデザインを合わせるためにMaterial3へのmigration対応した
     - ref: https://docs.flutter.dev/release/breaking-changes/material-3-migration
   - Share.shareFilesは4.5.0でdeprecatedされたため、SharePlus.instance.shareに修正した
-　  - [https://pub.dev/packages/share_plus](https://pub.dev/packages/share_plus/changelog#450)　
+    - [https://pub.dev/packages/share_plus](https://pub.dev/packages/share_plus/changelog#450)　
 - 動作確認
   - 端末: iPhone 16e 26.2(Simulator)
   - <video src="https://github.com/user-attachments/assets/ee54431d-6751-42df-bd92-e33baeff5bc0" controls="true" />
+### [人生カウンター](./life_counter/)
+- 学習日
+  - 2026/1/19
+- 学習項目
+  - [データベースの基礎『人生カウンター』](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/life-counter)
+- 動画からの改善点
+  - 動画ではAppBarの背景色が青だが、開発環境(Flutter: 3.38.5)ではMaterial3が有効になって背景色がSurfaceColorに変更されている
+    - Flutter3.16からMaterial3がデフォルトで有効になったので動画とデザインを合わせるためにMaterial3へのmigration対応した
+    - ref: https://docs.flutter.dev/release/breaking-changes/material-3-migration
+  - pageを別ファイルに分割した
+  - `-1`ボタンを追加してカウントダウンできる様にした
+- 動作確認
+  - 端末: iPhone 16e 26.2(Simulator)
+  - <video src="https://github.com/user-attachments/assets/084fc449-6cde-442b-b173-79e9be07fa59" controls="true" />
+  
