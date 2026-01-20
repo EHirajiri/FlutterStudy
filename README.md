@@ -86,4 +86,15 @@
 - 動作確認
   - 端末: iPhone 16e 26.2(Simulator)
   - <video src="https://github.com/user-attachments/assets/084fc449-6cde-442b-b173-79e9be07fa59" controls="true" />
-  
+### [Firebaseの基礎『チャット』](./chat/)
+- 学習日
+  - 2026/1/20
+- 学習項目
+  - [Firebaseの基礎『チャット』【前編】](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/make-chat)
+  - [Firebaseの基礎『チャット』【後編】](https://zenn.dev/flutteruniv/books/flutter-textbook/viewer/update-chat)
+- 動画からの改善点
+  - 動画ではAppBarの背景色が青だが、開発環境(Flutter: 3.38.5)ではMaterial3が有効になって背景色がSurfaceColorに変更されている
+    - Flutter3.16からMaterial3がデフォルトで有効になったので動画とデザインを合わせるためにMaterial3へのmigration対応した
+    - ref: https://docs.flutter.dev/release/breaking-changes/material-3-migration
+- 動作確認
+  - Android 16(Simulator)
