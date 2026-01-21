@@ -15,6 +15,8 @@ class ChatPage extends StatefulWidget {
 
 class _ChatPageState extends State<ChatPage> {
   final controller = TextEditingController();
+  final scrollController = ScrollController();
+  int previousPostCount = 0;
 
   Future<void> sendPost(String text) async {
     final newDocumentReference = postsReference.doc();
@@ -33,6 +35,7 @@ class _ChatPageState extends State<ChatPage> {
   @override
   void dispose() {
     controller.dispose();
+    scrollController.dispose();
     super.dispose();
   }
 
@@ -76,7 +79,23 @@ class _ChatPageState extends State<ChatPage> {
                   // 取得までには時間がかかるのではじめは null が入っています。
                   // null の場合は空配列が代入されるようにしています。
                   final docs = snapshot.data?.docs ?? [];
+
+                  // 投稿数が増えたときのみスクロール
+                  if (docs.length > previousPostCount) {
+                    WidgetsBinding.instance.addPostFrameCallback((_) {
+                      if (scrollController.hasClients) {
+                        scrollController.animateTo(
+                          scrollController.position.maxScrollExtent,
+                          duration: const Duration(milliseconds: 100),
+                          curve: Curves.easeOut,
+                        );
+                      }
+                    });
+                  }
+                  previousPostCount = docs.length;
+
                   return ListView.builder(
+                    controller: scrollController,
                     itemCount: docs.length,
                     itemBuilder: (context, index) {
                       // data() に Post インスタンスが入っています。

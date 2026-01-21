@@ -96,5 +96,6 @@
   - 動画ではAppBarの背景色が青だが、開発環境(Flutter: 3.38.5)ではMaterial3が有効になって背景色がSurfaceColorに変更されている
     - Flutter3.16からMaterial3がデフォルトで有効になったので動画とデザインを合わせるためにMaterial3へのmigration対応した
     - ref: https://docs.flutter.dev/release/breaking-changes/material-3-migration
+  - チャット画面表示時と新規投稿した時は一番下にスクロールするように修正
 - 動作確認
   - Android 16(Simulator)
